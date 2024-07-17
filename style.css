@@ -79,21 +79,21 @@
     max-width: 580px;
 }
 
-.banner-content-heading{
+.banner-content-heading {
     color: rgb(58, 58, 58);
     font-size: 52px;
     font-weight: 700;
     margin: 0px;
 }
 
-.banner-content-description{
+.banner-content-description {
     color: rgb(58, 58, 58);
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 25px;
 }
 
-.banner-img{
+.banner-img {
     max-width: 440px;
     margin-left: 120px;
     background-image: url("images/Circle\ design.svg");
@@ -101,12 +101,12 @@
     background-size: cover;
 }
 
-.banner-img img{
+.banner-img img {
     height: 100%;
     width: 100%;
 }
 
-.company-logo{
+.company-logo {
     padding: 33px 60px;
     margin: 0 auto;
     max-width: 1110px;
@@ -118,38 +118,148 @@
     grid-template-columns: repeat(7, 1fr);
 }
 
-.company-logo img{
 
+
+
+/* main section style */
+
+.main{
+    margin-top: 100px;
 }
+
+.card-container {
+    max-width: 1045px;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card-heading {
+    color: rgb(58, 58, 58);
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.card {
+    max-width: 300px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    background-color: rgb(255, 255, 255);
+    padding: 17px 15px 20px;
+    
+}
+
+.card-img-container {
+    max-width: 300px;
+}
+
+.card-img-container img {
+    height: 100%;
+    width: 100%;
+}
+
+.product-name {
+    color: rgb(24, 25, 31);
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.product-price {
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.product-description {
+    color: rgb(120, 120, 133);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.featured{
+    max-width: 1110px;
+    margin: 150px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.featured-img-container{
+    max-width: 400px;
+}
+
+.featured-img-container img{
+    width: 100%;
+    height: 100%;
+}
+
+.featured-content{
+    max-width: 610px;
+}
+
+.featured-heading{
+    color: rgb(10, 8, 38);
+    font-size: 38px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.featured-description{
+    color: rgb(108, 108, 108);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+
+
 
 
 
 /* responsive in small device */
 
 @media screen and (max-width: 576px) {
-    .nav, .nav ul{
+
+    .nav,
+    .nav ul {
         flex-direction: column;
     }
 
-    .nav ul li{
+    .nav ul li {
         margin-top: 13px;
     }
 
-    .banner{
-       flex-direction: column-reverse;
+    .banner {
+        flex-direction: column-reverse;
     }
 
-    .banner-img{
+    .banner-img {
         margin: 0px;
     }
 
-    .banner-content{
+    .banner-content {
         text-align: center;
     }
 
-    .company-logo{
-        grid-template-columns: repeat(1, 1fr);
+    .company-logo {
+        grid-template-columns: repeat(2, 1fr);
         gap: 25px;
+    }
+
+    .card-container{
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+
+    .featured{
+        flex-direction: column;
+    }
+
+    .featured-content{
+        margin-top: 40px;
     }
 }
 
@@ -157,25 +267,39 @@
 /* responsive in mediam device */
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .nav{
+    .nav {
         flex-direction: column;
     }
 
-    .banner{
+    .banner {
         flex-direction: column-reverse;
     }
 
-    .banner-img{
+    .banner-img {
         margin: 0px;
     }
 
-    .banner-content{
+    .banner-content {
         text-align: center;
         margin-top: 50px;
     }
 
-    .company-logo{
-        grid-template-columns: repeat(3, 1fr);
+    .company-logo {
+        grid-template-columns: repeat(4, 1fr);
         gap: 50px;
+        justify-items: center;
+    }
+
+    .card-container{
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    .featured{
+        flex-direction: column;
+    }
+
+    .featured-content{
+        margin-top: 40px;
     }
 }
