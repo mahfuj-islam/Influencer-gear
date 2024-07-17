@@ -123,7 +123,7 @@
 
 /* main section style */
 
-.main{
+.main {
     margin-top: 100px;
 }
 
@@ -149,7 +149,7 @@
     box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
     background-color: rgb(255, 255, 255);
     padding: 17px 15px 20px;
-    
+
 }
 
 .card-img-container {
@@ -179,7 +179,7 @@
     font-weight: 700;
 }
 
-.featured{
+.featured {
     max-width: 1110px;
     margin: 150px auto;
     display: flex;
@@ -187,32 +187,63 @@
     justify-content: space-between;
 }
 
-.featured-img-container{
+.featured-img-container {
     max-width: 400px;
 }
 
-.featured-img-container img{
+.featured-img-container img {
     width: 100%;
     height: 100%;
 }
 
-.featured-content{
+.featured-content {
     max-width: 610px;
 }
 
-.featured-heading{
+.featured-heading {
     color: rgb(10, 8, 38);
     font-size: 38px;
     margin: 0;
     font-weight: 700;
 }
 
-.featured-description{
+.featured-description {
     color: rgb(108, 108, 108);
     font-size: 16px;
     font-weight: 700;
 }
 
+
+/* footer section style */
+
+.footer {
+    max-width: 100%;
+    background-color: rgb(9, 7, 44);;
+}
+
+.footer-content {
+    max-width: 325px;
+    margin: 0px auto;
+    padding: 40px;
+}
+
+.footer-heading {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.footer-copyright {
+    color: rgb(217, 219, 225);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.footer-reseved {
+    color: rgb(217, 219, 225);
+    font-size: 13px;
+    font-weight: 700;
+}
 
 
 
@@ -249,16 +280,16 @@
         gap: 25px;
     }
 
-    .card-container{
+    .card-container {
         grid-template-columns: repeat(1, 1fr);
         justify-items: center;
     }
 
-    .featured{
+    .featured {
         flex-direction: column;
     }
 
-    .featured-content{
+    .featured-content {
         margin-top: 40px;
     }
 }
@@ -290,16 +321,16 @@
         justify-items: center;
     }
 
-    .card-container{
+    .card-container {
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
     }
 
-    .featured{
+    .featured {
         flex-direction: column;
     }
 
-    .featured-content{
+    .featured-content {
         margin-top: 40px;
     }
 }
